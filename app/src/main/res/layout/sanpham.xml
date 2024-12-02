@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/maSP"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Mã"
+
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tenSP"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        app:layout_constraintStart_toEndOf="@+id/maSP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/soLuong"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="SL"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tenSP"
+        tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/optBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/soLuong"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/three_dots_icon"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
